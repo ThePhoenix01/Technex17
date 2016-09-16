@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/matt"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.piratejester.technex17.activities.EventDetail$PlaceholderFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/layout_detail_frag"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@color/md_deep_orange_trans"
+            android:layout_height="wrap_content">
+
+            <org.piratejester.technex17.utils.BoldModTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/title"
+                android:textSize="20sp"
+                android:text="Details"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <org.piratejester.technex17.utils.ModTextView
+                android:layout_width="match_parent"
+                android:id="@+id/body"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/paragraph"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
