@@ -53,6 +53,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.piratejester.technex17.activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/null_string"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

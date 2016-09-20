@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.piratejester.technex17.activities.LoginActivity$PlaceholderFragment">
+
+    <org.piratejester.technex17.utils.BoldModTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Technex 17"
+        android:textColor="@color/white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/transparent_white_percent_10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:src="@drawable/account_outline"
+                android:background="@color/transparent_black_percent_45"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email / UserName"
+                android:textSize="16dp"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/transparent_white_percent_90"
+                android:textColor="@color/transparent_white_hex_15"
+                android:background="@color/transparent_black_percent_30"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:src="@drawable/lock_out"
+                android:background="@color/transparent_black_percent_45"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/transparent_white_percent_90"
+                android:textColor="@color/transparent_white_hex_15"
+                android:background="@color/transparent_black_percent_30"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top|center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:text="Forgot Password ?"/>
+
+        <View
+            android:layout_width="115dp"
+            android:layout_height="1dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@color/white"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="@color/md_indigo_trans"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+        android:textSize="14dp"
+        android:textColorHighlight="@color/grey"
+        android:textColor="@color/transparent_white_percent_55"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="OR"
+        android:textSize="12dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="REGISTER"
+        android:id="@+id/log_but"
+        android:textColorHighlight="@color/grey"
+        android:textSize="14dp"
+        android:textColor="@color/transparent_white_percent_55"
+        android:background="@color/md_pink_trans"
+        />
+
+
+
+</LinearLayout>

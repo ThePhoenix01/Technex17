@@ -71,8 +71,7 @@ public class Events extends AppCompatActivity {
         Bitmap icon1 = BitmapFactory.decodeResource(getResources(), R.drawable.cart_outline);
         Bitmap icons[] = {icon1, icon1, icon1, icon1};
 
-        LinearLayoutManager mLayoutManager
-                = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new EventsAdapter(names, icons, background);
