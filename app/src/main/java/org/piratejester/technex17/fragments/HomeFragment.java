@@ -49,6 +49,14 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         rootView = view;
 
+        /*final float scale = getContext().getResources().getDisplayMetrics().density;
+        int pixels = (int) (160 * scale + 0.5f);
+        int pixelt = (int) (56 * scale + 0.5f);
+        AppBarLayout appBarLayout = (AppBarLayout)getActivity().findViewById(R.id.app_bar);
+        appBarLayout.getLayoutParams().height = pixels;
+        Toolbar toolbar = (Toolbar)getActivity().findViewById(R.id.toolbar);
+        toolbar.getLayoutParams().height = pixelt;*/
+
         setupNavigRecyclerView();
         setupNotifRecyclerView();
 
@@ -114,7 +122,7 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onItemClick(View view, int position) {
                         Log.d("Clicked", "" + position);
-                        ViewPager viewPager = (ViewPager)rootView.findViewById(R.id.container);
+                        ViewPager viewPager = (ViewPager)getActivity().findViewById(R.id.container);
                         viewPager.setCurrentItem(2);
                     }
                 })

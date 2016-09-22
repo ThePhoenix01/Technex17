@@ -2,11 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="org.piratejester.technex17.activities.HomeActivity">
-    <!--<item
+    <item
         android:id="@+id/action_notif"
         android:orderInCategory="100"
         android:icon="@drawable/bell_white"
         android:title="@string/action_settings"
-        app:showAsAction="ifRoom" />-->
+        app:showAsAction="ifRoom" />
 
 </menu>

@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/card_view"
-    android:layout_gravity="top"
-    android:layout_width="match_parent"
-    card_view:cardBackgroundColor="#00000000"
-    card_view:cardElevation="0dp"
-    android:layout_height="60dp"
-    android:layout_weight="1"
-    card_view:cardCornerRadius="0dp">
-
-    <LinearLayout
+<LinearLayout
         android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
-        android:background="@color/transparent_black_percent_25"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="60dp"
+        <org.piratejester.technex17.utils.RoundedImageView
+            android:layout_width="30dp"
             android:padding="10dp"
-            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="30dp"
             android:id="@+id/iv_logo"
-            android:src="@drawable/user_m_white"/>
+            android:src="@drawable/cloud"/>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -34,7 +24,7 @@
 
         <org.piratejester.technex17.utils.ModTextView
             android:layout_width="match_parent"
-            android:textColor="@color/white"
+            android:textColor="@color/md_grey_700"
             android:id="@+id/field_text"
             android:layout_height="wrap_content"
             android:text = "Name"
@@ -44,11 +34,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/value_text"
-            android:textColor="@color/white"
+            android:textColor="@color/md_grey_900"
             android:textSize = "14sp"
             android:text = "Sir Phoenix de Tauroville"/>
 
     </LinearLayout>
-    </LinearLayout>
-
-</android.support.v7.widget.CardView>
+</LinearLayout>

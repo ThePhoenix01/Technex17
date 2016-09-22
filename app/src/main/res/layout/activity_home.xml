@@ -12,7 +12,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="160dp"
         android:background="@drawable/starrysky"
         android:fitsSystemWindows="false"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -39,7 +39,7 @@
 
                 android:background="@color/transparent_black_percent_15"
                 app:popupTheme="@style/AppTheme.PopupOverlay"
-                android:layout_height="50dp">
+                android:layout_height="?attr/actionBarSize">
 
 
 
@@ -83,7 +83,7 @@
                     android:src="@drawable/user_m_white"
                     android:scaleType="fitCenter"
                     android:layout_gravity="center"/>
-                <ImageButton
+<!--                <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -92,7 +92,7 @@
                     android:background="@color/transparent_full"
                     android:src="@drawable/bell_white"
                     android:scaleType="fitCenter"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"/>-->
 
             </LinearLayout>
 

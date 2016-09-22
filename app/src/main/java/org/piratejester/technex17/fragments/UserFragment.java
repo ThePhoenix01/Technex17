@@ -1,17 +1,12 @@
 package org.piratejester.technex17.fragments;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import org.piratejester.technex17.R;
-import org.piratejester.technex17.adapters.UserAdapter;
 
 /**
  * Created by root on 18/9/16.
@@ -34,7 +29,14 @@ public class UserFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_user, container, false);
 
-        RecyclerView mUserDetailRecycler,mUserTeamRecycler;
+        /*final float scale = getContext().getResources().getDisplayMetrics().density;
+        int pixels = (int) (56 * scale + 0.5f);
+        AppBarLayout appBarLayout = (AppBarLayout)getActivity().findViewById(R.id.app_bar);
+        appBarLayout.getLayoutParams().height = pixels;
+        Toolbar toolbar = (Toolbar)getActivity().findViewById(R.id.toolbar);
+        toolbar.getLayoutParams().height = 0;*/
+
+/*        RecyclerView mUserDetailRecycler,mUserTeamRecycler;
         RecyclerView.Adapter mUserDetailAdapter,mUserTeamAdapter;
         RecyclerView.LayoutManager mDetailLayoutManager,mTeamLayoutManager;
 
@@ -52,7 +54,7 @@ public class UserFragment extends Fragment {
         mUserDetailRecycler.setLayoutManager(mDetailLayoutManager);
         mUserDetailAdapter = new UserAdapter(field, value, logo);
         mUserDetailRecycler.setAdapter(mUserDetailAdapter);
-        /*mUserDetailRecycler.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
+        *//*mUserDetailRecycler.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
                         Log.d("Clicked", "" + position);
@@ -62,13 +64,13 @@ public class UserFragment extends Fragment {
                     }
                 })
         );
-*/
+*//*
         mUserTeamRecycler = (RecyclerView) rootView.findViewById(R.id.userteam_recycler);
         mTeamLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         mUserTeamRecycler.setLayoutManager(mTeamLayoutManager);
         mUserTeamAdapter = new UserAdapter(field, value, logo);
         mUserTeamRecycler.setAdapter(mUserTeamAdapter);
-        /*mUserTeamRecycler.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
+        *//*mUserTeamRecycler.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
                         Log.d("Clicked", "" + position);

@@ -39,6 +39,13 @@ public class EventFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_events, container, false);
 
+        /*final float scale = getContext().getResources().getDisplayMetrics().density;
+        int pixels = (int) (56 * scale + 0.5f);
+        AppBarLayout appBarLayout = (AppBarLayout)getActivity().findViewById(R.id.app_bar);
+        appBarLayout.getLayoutParams().height = pixels;
+        Toolbar toolbar = (Toolbar)getActivity().findViewById(R.id.toolbar);
+        toolbar.getLayoutParams().height = 0;*/
+
         RecyclerView mEventRecycler;
         RecyclerView.Adapter mEventAdapter;
         RecyclerView.LayoutManager mEventLayoutManager;
@@ -71,4 +78,5 @@ public class EventFragment extends Fragment {
         );
         return rootView;
     }
+
 }
