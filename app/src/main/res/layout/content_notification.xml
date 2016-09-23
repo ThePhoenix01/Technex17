@@ -17,11 +17,12 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
 
-            <include layout="@layout/card_notification"/>
-            <include layout="@layout/card_notification3"/>
-            <include layout="@layout/card_notification"/>
-            <include layout="@layout/card_notification"/>
-            <include layout="@layout/card_notification3"/>
+
+            <include layout="@layout/card_notification2"/>
+            <include layout="@layout/card_notification2"/>
+            <include layout="@layout/card_notification2"/>
+            <include layout="@layout/card_notification2"/>
+            <include layout="@layout/card_notification2"/>
             <include layout="@layout/card_notification2"/>
             <include layout="@layout/card_notification2"/>
             <include layout="@layout/card_notification2"/>

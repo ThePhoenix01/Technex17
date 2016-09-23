@@ -33,11 +33,11 @@
             android:name=".activities.EventDetail"
             android:label="@string/title_activity_event_detail"
             android:screenOrientation="portrait"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName=".activities.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.piratejester.technex17.activities.MainActivity" />
+                android:value="org.piratejester.technex17.activities.HomeActivity" />
         </activity>
         <activity
             android:name=".activities.HomeActivity"
