@@ -13,25 +13,25 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.piratejester.technex17.R;
-import org.piratejester.technex17.activities.EventActivity;
+import org.piratejester.technex17.activities.EventDetail;
 import org.piratejester.technex17.adapters.EventsAdapter;
 import org.piratejester.technex17.adapters.RecyclerItemClickListener;
 
 /**
  * Created by root on 18/9/16.
  */
-public class EventFragment extends Fragment {
-    public EventFragment() {
+public class EventListFragment extends Fragment {
+
+    private static final String ARG_SECTION_NUMBER = "section_number";
+
+    public EventListFragment() {
     }
 
-
-
-    /**
-     * Returns a new instance of this fragment for the given section
-     * number.
-     */
-    public static EventFragment newInstance() {
-        EventFragment fragment = new EventFragment();
+    public static EventListFragment newInstance(int sectionNumber) {
+        EventListFragment fragment = new EventListFragment();
+        Bundle args = new Bundle();
+        args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -70,7 +70,7 @@ public class EventFragment extends Fragment {
                     @Override
                     public void onItemClick(View view, int position) {
                         Log.d("Clicked", "" + position);
-                        Intent intent = new Intent(getActivity(),EventActivity.class);
+                        Intent intent = new Intent(getActivity(),EventDetail.class);
                         intent.putExtra("POSITION",position);
                         startActivity(intent);
                     }

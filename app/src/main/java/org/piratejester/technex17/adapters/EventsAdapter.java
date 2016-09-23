@@ -17,7 +17,7 @@ import org.piratejester.technex17.R;
  * Created by Soumyadeep on 02-Dec-15.
  */
 public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder> {
-    private String[] mName, mAddress;
+    private String[] mName, mSubs;
     private int[] mRating;
     private Bitmap[] mBitmaps,mLogo,mBg;
 
