@@ -62,9 +62,15 @@ public class NavigHomeAdapter extends RecyclerView.Adapter<NavigHomeAdapter.View
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        holder.title_text.setText(mTitle[position]);
-        holder.subtitle_text.setText(mSubtitle[position]);
-        holder.icon_img.setImageBitmap(mImg[position]);
-        holder.card_frame.setBackgroundColor(mColors[position]);
+        if(position==0){
+
+        }
+        else{
+            holder.title_text.setText(mTitle[position]);
+            holder.subtitle_text.setText(mSubtitle[position]);
+            holder.icon_img.setImageBitmap(mImg[position]);
+            holder.card_frame.setBackgroundColor(mColors[position]);
+        }
+
     }
 }

@@ -47,8 +47,7 @@ public class SigninFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_signin, container, false);
 
         this.imageView = (ImageView)rootView.findViewById(R.id.imageviewreg);
-        Button photoButton = (Button) rootView.findViewById(R.id.cam_reg);
-        photoButton.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

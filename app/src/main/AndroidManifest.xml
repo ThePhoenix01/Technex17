@@ -58,6 +58,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.piratejester.technex17.activities.HomeActivity" />
         </activity>
+        <activity
+            android:name=".dialogs.ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:parentActivityName=".activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.piratejester.technex17.activities.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -57,8 +57,10 @@ public class HomeFragment extends Fragment {
         Toolbar toolbar = (Toolbar)getActivity().findViewById(R.id.toolbar);
         toolbar.getLayoutParams().height = pixelt;*/
 
-        setupNavigRecyclerView();
+
         setupNotifRecyclerView();
+
+        setupNavigRecyclerView();
 
         return rootView;
     }
@@ -69,6 +71,8 @@ public class HomeFragment extends Fragment {
 
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
         mViewPager.setAdapter(mCustomPagerAdapter);
+        mViewPager.setTop(1);
+        mViewPager.bringToFront();
 
 
     }

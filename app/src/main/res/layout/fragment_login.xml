@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/matt"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
@@ -15,17 +16,29 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:gravity="center"
+        android:textSize="16dp"
+        android:text="Welcome to"
+        android:textColor="@color/white"/>
+
+    <org.piratejester.technex17.utils.BoldModTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:textSize="30dp"
         android:text="Technex 17"
         android:textColor="@color/white"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_marginTop="100dp"
+        android:padding="4dp"
         android:background="@color/transparent_white_percent_10">
 
 
@@ -86,52 +99,58 @@
 
         </LinearLayout>
 
-        <TextView
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
             android:textSize="14dp"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:id="@+id/forgot_butt"
             android:gravity="top|center_horizontal"
             android:textColor="@color/white"
-            android:textStyle="italic"
-            android:text="Forgot Password ?"/>
+            android:text="Forgot Password? Click Here"/>
 
-        <View
-            android:layout_width="115dp"
-            android:layout_height="1dp"
-            android:layout_gravity="top|center_horizontal"
-            android:background="@color/white"
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:background="@color/md_indigo_trans"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="LOG IN"
+            android:textSize="14dp"
+            android:textColorHighlight="@color/grey"
+            android:textColor="@color/transparent_white_percent_55"/>
 
-            />
+
+
+        />
 
     </LinearLayout>
 
-    <Button
-        android:layout_height="40dp"
+
+    <Space
         android:layout_width="match_parent"
-        android:background="@color/md_indigo_trans"
-        android:layout_marginTop="50dp"
-        android:text="LOGIN"
-        android:textSize="14dp"
-        android:textColorHighlight="@color/grey"
-        android:textColor="@color/transparent_white_percent_55"/>
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="right" />
 
-
-    <TextView
+    <org.piratejester.technex17.utils.ModTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="OR"
-        android:textSize="12dp"
+        android:text="Not yet Registered?"
+        android:textSize="14dp"
         android:textColor="@color/white"/>
+
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="REGISTER"
+        android:text="REGISTER NOW"
         android:id="@+id/log_but"
         android:textColorHighlight="@color/grey"
         android:textSize="14dp"

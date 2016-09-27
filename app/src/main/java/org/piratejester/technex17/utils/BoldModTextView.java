@@ -26,7 +26,7 @@ public class BoldModTextView extends TextView {
     }
 
     private void init(){
-        Typeface tf=Typeface.createFromAsset(getContext().getAssets(),"gt-walsheim-web.ttf");
+        Typeface tf=Typeface.createFromAsset(getContext().getAssets(),"OpenSans-Regular.ttf");
         setTypeface(tf,Typeface.BOLD);
     }
 }

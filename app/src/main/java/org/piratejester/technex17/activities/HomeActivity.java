@@ -1,6 +1,7 @@
 package org.piratejester.technex17.activities;
 
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -40,33 +41,55 @@ public class HomeActivity extends AppCompatActivity {
         viewPager = (ViewPager)findViewById(R.id.container);
 
         home=(ImageButton)findViewById(R.id.home_tab);
+        news=(ImageButton)findViewById(R.id.news_tab);
+        events=(ImageButton)findViewById(R.id.events_tab);
+        user=(ImageButton)findViewById(R.id.dash_tab);
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                home.animate();
                 viewPager.setCurrentItem(0);
+                home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_black));
+                news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_2_white));
+                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
+                user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_white));
             }
         });
 
-        news=(ImageButton)findViewById(R.id.news_tab);
         news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 viewPager.setCurrentItem(1);
+                news.animate();
+                home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_white));
+                news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_black));
+                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
+                user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_white));
             }
         });
 
-        events=(ImageButton)findViewById(R.id.events_tab);
+
         events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 viewPager.setCurrentItem(2);
+                events.animate();
+                home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_white));
+                news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_2_white));
+                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_black));
+                user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_white));
             }
         });
-        user=(ImageButton)findViewById(R.id.dash_tab);
         user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 viewPager.setCurrentItem(3);
+                user.animate();
+                home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_white));
+                news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_2_white));
+                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
+                user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_black));
             }
         });
 
@@ -146,6 +169,7 @@ public class HomeActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
 
             pos =position;
+            iconista();
             switch (position) {
                 case 0:
                     return "SECTION 1";
@@ -156,5 +180,8 @@ public class HomeActivity extends AppCompatActivity {
             }
             return null;
         }
+    }
+    public void iconista(){
+
     }
 }

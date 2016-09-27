@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 
 import org.piratejester.technex17.R;
 import org.piratejester.technex17.fragments.LoginFragment;
@@ -93,9 +92,9 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             switch (position) {
-                case 0:
-                    return SigninFragment.newInstance();
                 case 1:
+                    return SigninFragment.newInstance();
+                case 0:
                     return LoginFragment.newInstance();
                 default:
                     return LoginFragment.newInstance();
@@ -112,9 +111,9 @@ public class LoginActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SIGN UP";
+                    return "Log In";
                 case 1:
-                    return "LOGIN";
+                    return "Sign Up";
             }
             return null;
         }
