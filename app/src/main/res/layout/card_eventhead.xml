@@ -76,100 +76,17 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:orientation="horizontal">
-
-                <org.piratejester.technex17.utils.ModTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right"
-                    android:layout_marginStart="15dp"
-                    android:gravity="left"
-                    android:textStyle="bold"
-                    android:paddingRight="5dp"
-                    android:id="@+id/e1"
-                    android:textSize="14sp"
-                    android:textColor="@color/white"
-                    android:text="Xestos"
-                    android:layout_marginBottom="2dp"/>
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_gravity="bottom"
                         android:layout_marginEnd="5dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/right_ghost"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:orientation="horizontal">
-
-
-                <org.piratejester.technex17.utils.ModTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingRight="5dp"
-                    android:layout_gravity="right"
-                    android:layout_marginStart="15dp"
-                    android:gravity="right"
-                    android:textSize="14dp"
-                    android:textColor="@color/white"
-                    android:id="@+id/e2"
-                    android:text="Scientists of Utopia"
-                    android:layout_marginBottom="2dp"/>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="bottom"
-                        android:layout_marginEnd="5dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/right_ghost"/>
-
-                </LinearLayout>
-
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:orientation="horizontal">
-
-
-
-                <org.piratejester.technex17.utils.ModTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingEnd="5dp"
-                    android:layout_gravity="right"
-                    android:layout_marginStart="15dp"
-                    android:gravity="left"
-                    android:layout_marginRight="5dp"
-                    android:textSize="14dp"
-                    android:layout_marginBottom="2dp"
-                    android:id="@+id/e3"
-                    android:textColor="@color/white"
-                    android:text="Pixelate"
-               />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginEnd="5dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/right_ghost"/>
-
-            </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:orientation="horizontal">
+                        android:padding="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/rupee"/>
 
 
 
@@ -177,32 +94,78 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingEnd="5dp"
-                        android:layout_gravity="right"
                         android:layout_marginStart="15dp"
+                        android:id = "@+id/prize_text"
                         android:gravity="left"
                         android:layout_marginRight="5dp"
                         android:textSize="14dp"
                         android:layout_marginBottom="2dp"
                         android:textColor="@color/white"
-                        android:text="and more..."
-                        />
+                        android:text="Prize : Rs 20000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_gravity="bottom"
                         android:layout_marginEnd="5dp"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/account_outline"/>
+
+
+
+                    <org.piratejester.technex17.utils.ModTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="5dp"
+                        android:layout_marginStart="15dp"
+                        android:id = "@+id/team_text"
+                        android:gravity="left"
+                        android:layout_marginRight="5dp"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="2dp"
+                        android:textColor="@color/white"
+                        android:text="Maximum Members : 4" />
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stopwatch_white"/>
+
+                    <org.piratejester.technex17.utils.ModTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="5dp"
+                        android:layout_marginStart="15dp"
+                        android:id = "@+id/time_text"
+                        android:gravity="left"
+                        android:layout_marginRight="5dp"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="2dp"
+                        android:textColor="@color/white"
+                        android:text="Deadline : 20th Jan" />
+
+                </LinearLayout>
 
         </LinearLayout>
             </FrameLayout>
 
 
-            <org.piratejester.technex17.utils.BoldModTextView
+            <org.piratejester.technex17.utils.ModTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

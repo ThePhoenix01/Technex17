@@ -51,6 +51,9 @@ public class EventFragment extends Fragment {
         RecyclerView.LayoutManager mEventLayoutManager;
 
         String[] names = {"Robotics", "AeroModelling", "SAE", "Astronomy"};
+        String[] e1 = {"Robonex", "Robonex", "Robonex", "Robonex"};
+        String[] e2 = {"Utopia", "Utopia", "Utopia", "Utopia"};
+        String[] e3 = {"Manthan", "Manthan", "Manthan", "Manthan"};
         Bitmap background[] = {
                 BitmapFactory.decodeResource(getResources(), R.drawable.sae),
                 BitmapFactory.decodeResource(getResources(), R.drawable.aero),
@@ -64,7 +67,7 @@ public class EventFragment extends Fragment {
         mEventRecycler = (RecyclerView) rootView.findViewById(R.id.my_recycler_view_1);
         mEventLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         mEventRecycler.setLayoutManager(mEventLayoutManager);
-        mEventAdapter = new EventsAdapter(names, icons, background);
+        mEventAdapter = new EventsAdapter(names, icons, background,e1,e2,e3);
         mEventRecycler.setAdapter(mEventAdapter);
         mEventRecycler.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
