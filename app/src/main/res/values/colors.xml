@@ -410,5 +410,6 @@
     <color name="md_blue_grey_800">#37474F</color>
     <color name="md_blue_grey_900">#263238</color>
     <color name="md_blue_grey_trans">#AA263238</color>
+    <color name="md_choco_trans">#7AA95548</color>
 
 </resources>
