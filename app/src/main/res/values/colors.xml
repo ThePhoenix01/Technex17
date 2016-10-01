@@ -3,8 +3,8 @@
 
     <!-- the  primary ones -->
 
-    <color name="colorPrimary">#1976D2</color>
-    <color name="colorPrimaryDark">#33000000</color>
+    <color name="colorPrimary">#167080</color>
+    <color name="colorPrimaryDark">#085060</color>
     <color name="colorAccent">#c0392b</color>
 
     <color name="black_overlay">#66000000</color>

@@ -17,40 +17,56 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_margin="4dp"
-            android:layout_height="160dp">
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/pager"
+            android:id="@+id/carousel_home"
+            android:layout_height="180dp">
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_margin="4dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </android.support.v4.view.ViewPager>
-
+                android:layout_height="180dp"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
+                android:id="@+id/carousel_frame"
+                android:gravity="center_horizontal|center_vertical"
+                android:clickable="true"
+                android:background="@color/transparent_black_percent_30"
                 android:orientation="horizontal"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/left_ghost"
-                    android:layout_height="40dp" />
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"/>
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:src="@drawable/right_ghost"
-                    android:layout_height="40dp" />
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:backgroundTint="@color/greensea"
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/ic_media_play" />
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:backgroundTint="@color/alizarin"
+                    android:id="@+id/stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/ic_media_pause" />
 
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:backgroundTint="@color/belizehole"
+                    android:id="@+id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:src="@android:drawable/arrow_down_float" />
             </LinearLayout>
 
+
         </FrameLayout>
+
 
 
         <include layout="@layout/home_gridlayout"/>
@@ -108,7 +124,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:id="@+id/bell_tab"
+                                android:id="@+id/logout"
                                 android:layout_margin="10dp"
                                 android:background="@color/transparent_full"
                                 android:src="@drawable/logoutsvg"

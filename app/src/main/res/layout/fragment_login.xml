@@ -118,6 +118,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="LOG IN"
+            android:id="@+id/log_but"
             android:textSize="14dp"
             android:textColorHighlight="@color/grey"
             android:textColor="@color/transparent_white_percent_55"/>
@@ -151,7 +152,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:text="REGISTER NOW"
-        android:id="@+id/log_but"
+        android:id="@+id/sign_but"
         android:textColorHighlight="@color/grey"
         android:textSize="14dp"
         android:textColor="@color/transparent_white_percent_55"

@@ -1,41 +1,17 @@
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/matt"
-    tools:context="org.piratejester.technex17.activities.EventDetail$PlaceholderFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@drawable/matt"
+android:orientation="vertical"
+android:layout_height="match_parent"
+tools:context=".activities.HomeActivity">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:id="@+id/layout_detail_frag"
-                android:orientation="vertical"
-                android:layout_margin="10dp"
-                android:padding="5dp"
-                android:background="@color/md_deep_orange_trans"
-                android:layout_height="wrap_content">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/my_recycler_view_1"
+    android:scrollbars="vertical"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 
-                <org.piratejester.technex17.utils.BoldModTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:id="@+id/title"
-                    android:textSize="20sp"
-                    android:text="Details"/>
+</LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_height="1dp"
-                    android:background="@color/white"/>
-
-                <org.piratejester.technex17.utils.ModTextView
-                    android:layout_width="match_parent"
-                    android:id="@+id/body"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:text="@string/large_text"/>
-
-            </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>

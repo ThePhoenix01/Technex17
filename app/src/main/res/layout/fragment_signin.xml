@@ -3,9 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -263,12 +263,40 @@
             android:text="REGISTER"
             android:id="@+id/reg_but"
             android:textSize="18dp"
-            android:textColor="@color/transparent_white_hex_15">
+            android:textColor="@color/transparent_white_hex_15"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right" />
+
+        <org.piratejester.technex17.utils.ModTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Already Registered?"
+            android:textSize="14dp"
+            android:textColor="@color/white"/>
 
 
-        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="LOG IN NOW"
+            android:id="@+id/log_but"
+            android:textColorHighlight="@color/grey"
+            android:textSize="14dp"
+            android:textColor="@color/transparent_white_percent_55"
+            android:background="@color/md_pink_trans"
+            />
+
 
 
     </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

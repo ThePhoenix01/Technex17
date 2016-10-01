@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.piratejester.technex17">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -53,6 +57,27 @@
             android:name=".activities.EventActivity"
             android:label="@string/title_activity_event"
             android:parentActivityName=".activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.piratejester.technex17.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.Workshop"
+            android:label="@string/title_activity_workshop"
+            android:parentActivityName=".activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.piratejester.technex17.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.GuestLecture"
+            android:label="@string/title_activity_guest"
+            android:parentActivityName=".activities.HomeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -62,10 +87,20 @@
             android:name=".dialogs.ForgotPassword"
             android:label="@string/title_activity_forgot_password"
             android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.piratejester.technex17.activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activities.Gallery"
+            android:label="@string/title_activity_image_gallery"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.piratejester.technex17.activities.HomeActivity" />
         </activity>
     </application>
 

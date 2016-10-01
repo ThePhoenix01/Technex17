@@ -1,6 +1,8 @@
 package org.piratejester.technex17.fragments;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -10,11 +12,13 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import org.piratejester.technex17.R;
 import org.piratejester.technex17.activities.HomeActivity;
@@ -27,12 +31,6 @@ public class SigninFragment extends Fragment{
 
     }
 
-
-
-    /**
-     * Returns a new instance of this fragment for the given section
-     * number.
-     */
     public static SigninFragment newInstance() {
         SigninFragment fragment = new SigninFragment();
         return fragment;
@@ -40,12 +38,15 @@ public class SigninFragment extends Fragment{
 
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imageView;
+    private String MY_PREFS_NAME="MyPrefsFile";
+    ViewPager viewPager;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_signin, container, false);
 
+        viewPager = (ViewPager)getActivity().findViewById(R.id.container);
         this.imageView = (ImageView)rootView.findViewById(R.id.imageviewreg);
         imageView.setOnClickListener(new View.OnClickListener() {
 
@@ -63,7 +64,18 @@ public class SigninFragment extends Fragment{
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), HomeActivity.class);
                 startActivity(intent);
+                SharedPreferences.Editor editor = getActivity().getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE).edit();
+                editor.putBoolean("LoginStat",true);
+                editor.apply();
+                Toast.makeText(getActivity(),"Registed Successfully",Toast.LENGTH_SHORT).show();
                 getActivity().finish();
+            }
+        });
+        Button logBut = (Button)rootView.findViewById(R.id.log_but);
+        logBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewPager.setCurrentItem(0);
             }
         });
 
