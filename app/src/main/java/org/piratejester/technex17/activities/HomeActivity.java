@@ -101,7 +101,7 @@ public class HomeActivity extends AppCompatActivity {
 */
 /*home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_black));
                 news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_2_white));
-                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
+                events_mat.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
                 user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_white));*//*
 */
 /*
@@ -117,7 +117,7 @@ public class HomeActivity extends AppCompatActivity {
 */
 /*home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_white));
                 news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_black));
-                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
+                events_mat.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
                 user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_white));*//*
 */
 /*
@@ -125,16 +125,16 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
-        events.setOnClickListener(new View.OnClickListener() {
+        events_mat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 viewPager.setCurrentItem(2);
-                events.animate();
+                events_mat.animate();
                 *//*
 */
 /*home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_white));
                 news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_2_white));
-                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_black));
+                events_mat.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_black));
                 user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_white));*//*
 */
 /*
@@ -149,7 +149,7 @@ public class HomeActivity extends AppCompatActivity {
 */
 /*home.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.home_white));
                 news.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.news_2_white));
-                events.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
+                events_mat.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.trophy_white));
                 user.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.user_m_black));*//*
 */
 /*

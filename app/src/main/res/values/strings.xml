@@ -136,4 +136,5 @@
     <string name="title_activity_guest">Guest Lectures</string>
     <string name="title_activity_gallery">Technex Gallery</string>
     <string name="title_activity_image_gallery">Technex Gallery</string>
+    <string name="title_activity_wait_acitivity">Magic is Building Up</string>
 </resources>

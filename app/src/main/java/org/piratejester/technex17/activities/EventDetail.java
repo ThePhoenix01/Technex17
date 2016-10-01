@@ -1,8 +1,6 @@
 package org.piratejester.technex17.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -20,6 +18,7 @@ import android.view.ViewGroup;
 import org.piratejester.technex17.R;
 import org.piratejester.technex17.adapters.EventDetailAdapter;
 import org.piratejester.technex17.adapters.RecyclerItemClickListener;
+import org.piratejester.technex17.fragments.EventRegFragment;
 
 public class EventDetail extends AppCompatActivity {
 
@@ -59,14 +58,14 @@ public class EventDetail extends AppCompatActivity {
         tabLayout.getTabTextColors();
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
     }
 
@@ -202,7 +201,7 @@ public class EventDetail extends AppCompatActivity {
                             "Responsive elevation and dynamic elevation offsets.\n\n",
 
                     "Some component types have responsive elevation, meaning they change elevation in response " +
-                            "to user input (e.g., normal, focused, and pressed) or system events. These elevation " +
+                            "to user input (e.g., normal, focused, and pressed) or system events_mat. These elevation " +
                             "changes are consistently implemented using dynamic elevation offsets.\n" +
                             "Dynamic elevation offsets are the goal elevation that a component moves towards, relative " +
                             "to the component’s resting state. They ensure that elevation changes are consistent " +
@@ -272,7 +271,13 @@ public class EventDetail extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position);
+            if(position==3){
+                return EventRegFragment.newInstance();
+            }
+            else{
+                return PlaceholderFragment.newInstance(position);
+            }
+
         }
 
         @Override

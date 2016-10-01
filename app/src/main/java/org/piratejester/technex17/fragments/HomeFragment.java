@@ -24,10 +24,9 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 
 import org.piratejester.technex17.R;
-import org.piratejester.technex17.activities.GuestLecture;
 import org.piratejester.technex17.activities.Gallery;
 import org.piratejester.technex17.activities.LoginActivity;
-import org.piratejester.technex17.activities.Workshop;
+import org.piratejester.technex17.activities.WaitAcitivity;
 
 import java.util.HashMap;
 
@@ -231,21 +230,57 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         cv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent workshop_intent=new Intent(getActivity(), GuestLecture.class);
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
                 startActivity(workshop_intent);
             }
         });
         cv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent workshop_intent=new Intent(getActivity(), Workshop.class);
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
                 startActivity(workshop_intent);
             }
         });
+        cv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
+                startActivity(workshop_intent);
+            }
+        });
+        cv5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
+                startActivity(workshop_intent);
+            }
+        });
+        cv6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
+                startActivity(workshop_intent);
+            }
+        });
+
         cv7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent workshop_intent=new Intent(getActivity(), Gallery.class);
+                startActivity(workshop_intent);
+            }
+        });
+        cv8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
+                startActivity(workshop_intent);
+            }
+        });
+        cv9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workshop_intent=new Intent(getActivity(), WaitAcitivity.class);
                 startActivity(workshop_intent);
             }
         });

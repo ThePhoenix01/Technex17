@@ -41,8 +41,8 @@ public class Workshop extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter=new WorkshopAdapter(names,background,icons);
-//        Toast.makeText(EventsScreen.this,""+events.size(),Toast.LENGTH_SHORT).show();
-        // Log.d("error",""+events.get(3).getImage());
+//        Toast.makeText(EventsScreen.this,""+events_mat.size(),Toast.LENGTH_SHORT).show();
+        // Log.d("error",""+events_mat.get(3).getImage());
 
         mRecyclerView.setAdapter(mAdapter);
 
